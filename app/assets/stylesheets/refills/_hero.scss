@@ -1,0 +1,44 @@
+.hero {
+	$hero-background: desaturate(darken($base-accent-color, 20), 30);
+	$hero-color: white;
+
+	background: url(image_path('hero_image.jpg'));
+	background-color: $hero-background;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	padding-bottom: 4em;
+
+	.hero-inner {
+		@include outer-container;
+		@include clearfix;
+		padding: 2em;
+		margin: auto;
+		text-align: center;
+		color: $hero-color;
+
+		.hero-copy {
+			text-align: center;
+
+			h1 {
+				font-size: 2em;
+				margin-bottom: .5em;
+
+				@include media($large-screen) {
+					font-size: 3em;
+				}
+			}
+
+			p {
+				margin: auto;
+				margin-bottom: 2em;
+				font-weight: 220;
+
+				@include media($large-screen) {
+					font-size: 1.2em;
+					max-width: 70%;
+				}
+			}
+		}
+	}
+}

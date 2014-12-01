@@ -76,6 +76,11 @@ p {
   }
 }
 
+li {
+  font-family: $serif;
+  font-weight: 300;
+}
+
 a {
   @include transition(color 0.1s linear);
   color: $base-link-color;
