@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'bourbon'
 gem 'neat'
 gem 'refills'
+gem 'newrelic_rpm'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
